@@ -1,0 +1,172 @@
+/* Base styles using CSS variables */
+:root {
+  --background: #1F1F2E; /* Dark background */
+  --foreground: #F3F3F3; /* Light text for contrast */
+  --secondary-background: #2A2A3C; /* Slightly lighter dark for containers */
+  --button-background: linear-gradient(135deg, #6A8DFF, #4568E8); /* Vibrant blue gradient for buttons */
+  --button-hover: linear-gradient(135deg, #345DFF, #2A47E8); /* Slightly darker hover */
+  --message-bot: linear-gradient(135deg, #3E4E79, #6A8DFF); /* Softer blue for bot messages */
+  --message-user: linear-gradient(135deg, #E573FF, #B39DDB); /* Pinkish-purplish for user messages */
+  --input-border: #6A8DFF; /* Matches bot message for cohesion */
+  --qx-length: 400px; /* Define fixed or max width for bot messages */
+}
+
+[data-theme="light"] {
+  --background: #FDFDFE; /* Light theme background */
+  --foreground: #1F1F2E; /* Dark text for contrast */
+  --secondary-background: #FFFFFF; /* Clean white for containers */
+  --button-background: linear-gradient(135deg, #8DC6FF, #A7D8FF); /* Soft blue for light theme */
+  --button-hover: linear-gradient(135deg, #74BFFF, #98D4FF); /* Slightly darker hover */
+  --message-bot: linear-gradient(135deg, #CCE8FF, #A7D8FF); /* Soft pastel blue for bot messages */
+  --message-user: linear-gradient(135deg, #FFB3FF, #D6A4FF); /* Light pinkish-purple for user */
+  --input-border: #8DC6FF; /* Matches light theme colors */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--foreground);
+}
+
+.chatbot {
+  width: 600px;
+  max-height: 600px;
+  background: var(--secondary-background);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatbot-header {
+  background: var(--button-background);
+  color: var(--foreground);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-header .logo {
+  width: 90px;
+  height: 90px;
+  padding-left: 30px;
+}
+
+.chatbot-header h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.chatbot-body {
+  padding: 20px;
+  background: var(--background);
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.bot-message {
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  max-width: var(--qx-length); /* Limit bot message width */
+  word-wrap: break-word; /* Break long words to fit within the container */
+  white-space: pre-wrap; /* Wrap text properly and respect line breaks */
+  font-size: 14px;
+  background: var(--message-bot);
+  color: var(--foreground);
+  text-align: left; /* Align bot messages to the left */
+  box-shadow: 0 2px 8px rgba(106, 141, 255, 0.3);
+}
+
+.user-message {
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  max-width: 400px; /* Dynamically adjust user message width */
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 14px;
+  background: var(--message-user);
+  color: var(--foreground);
+  text-align: left; /* Align text inside the message bubble */
+  margin-left: auto; /* Align the message bubble to the right */
+  box-shadow: 0 2px 8px rgba(229, 115, 255, 0.3);
+}
+
+.chatbot-footer {
+  background: var(--secondary-background);
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-footer input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  outline: none;
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 16px;
+}
+
+.chatbot-footer input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.chatbot-footer button {
+  padding: 12px 20px;
+  background: var(--button-background);
+  color: var(--foreground);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 12px rgba(106, 141, 255, 0.3);
+}
+
+.chatbot-footer button:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--button-background);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-background);
+}
