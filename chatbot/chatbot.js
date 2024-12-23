@@ -16,45 +16,77 @@ fetch("responses.json")
     });
 
 // Function to find a bot response
-function getBotResponse(userInput) {
-  const input = userInput.toLowerCase();
-  
-  // Check for basic math operations
-  const mathRegex = /(\d+)\s*([\+\-\*\/])\s*(\d+)/;
-  const match = input.match(mathRegex);
-  if (match) {
-      const num1 = parseFloat(match[1]);
-      const operator = match[2];
-      const num2 = parseFloat(match[3]);
-      switch (operator) {
-          case "+":
-              return `The result is ${num1 + num2}.`;
-          case "-":
-              return `The result is ${num1 - num2}.`;
-          case "*":
-              return `The result is ${num1 * num2}.`;
-          case "/":
-              return num2 !== 0 ? `The result is ${num1 / num2}.` : "Division by zero is not allowed.";
-      }
-  }
+// Store user-specific context
+let userContext = {};
 
-  if (input.includes("recipe")) {
+// Function to find a bot response
+function getBotResponse(userInput) {
+    const input = userInput.toLowerCase();
+
+    // Check for "my name is" logic
+    if (input.includes("my name is")) {
+        const namePart = input.split("my name is")[1]?.trim(); // Extract the part after "my name is"
+        if (namePart && namePart.length > 0) {
+            const name = namePart.split(" ")[0]; // Extract only the first word as the name
+            userContext.name = name.charAt(0).toUpperCase() + name.slice(1); // Capitalize the first letter
+            return `Nice to meet you, ${userContext.name}!`;
+        } else {
+            return "Sorry, I didn't catch your name. Could you repeat it?";
+        }
+    }
+
+    // Check for "what's my name" logic
+    if (input.includes("what's my name")) {
+        return userContext.name
+            ? `Your name is ${userContext.name}!`
+            : "I don't know your name yet. Can you tell me?";
+    }
+
+    // Check for basic math operations
+    const mathRegex = /(\d+)\s*([\+\-\*\/])\s*(\d+)/;
+    const match = input.match(mathRegex);
+    if (match) {
+        const num1 = parseFloat(match[1]);
+        const operator = match[2];
+        const num2 = parseFloat(match[3]);
+        switch (operator) {
+            case "+":
+                return `The result is ${num1 + num2}.`;
+            case "-":
+                return `The result is ${num1 - num2}.`;
+            case "*":
+                return `The result is ${num1 * num2}.`;
+            case "/":
+                return num2 !== 0
+                    ? `The result is ${num1 / num2}.`
+                    : "Division by zero is not allowed.";
+            default:
+                return "I couldn't understand the math operation.";
+        }
+    }
+
+    // Check for recipe-related queries
+    if (input.includes("recipe")) {
+        for (const entry of chatbotResponses) {
+            if (
+                entry.keywords.includes("recipe") &&
+                entry.keywords.some(keyword => input.includes(keyword))
+            ) {
+                return entry.response;
+            }
+        }
+        return "I couldn't find a recipe for that dish. Can you try something else?";
+    }
+
+    // Match general keywords from JSON data
     for (const entry of chatbotResponses) {
-        if (entry.keywords.includes("recipe") && entry.keywords.some(keyword => input.includes(keyword))) {
+        if (entry.keywords.some(keyword => input.includes(keyword))) {
             return entry.response;
         }
     }
-    return "I couldn't find a recipe for that dish. Can you try something else?";
-}
 
-  // Match keywords in JSON data
-  for (const entry of chatbotResponses) {
-      if (entry.keywords.some(keyword => input.includes(keyword))) {
-          return entry.response;
-      }
-  }
-
-  return "I don't know how to respond to that.";
+    // Default response for unrecognized input
+    return "I don't know how to respond to that.";
 }
 
 
