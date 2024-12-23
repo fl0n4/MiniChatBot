@@ -1,56 +1,93 @@
-// Function to append messages to the chat body
-function appendMessage(content, className) {
-  const chatBody = document.getElementById("chatBody");
-  const messageElement = document.createElement("div");
-  messageElement.className = className;
-  messageElement.textContent = content;
-  chatBody.appendChild(messageElement);
-  chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll to the latest message
-}
+let chatbotResponses = [];
 
-// Function to handle sending user message and bot response
-function sendMessage() {
-  const userInput = document.getElementById("userInput").value.trim();
+// Fetch the JSON data
+fetch("responses.json")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Failed to load responses.json");
+        }
+        return response.json();
+    })
+    .then(data => {
+        chatbotResponses = data;
+    })
+    .catch(error => {
+        console.error("Error loading responses:", error);
+    });
+
+// Function to find a bot response
+function getBotResponse(userInput) {
+  const input = userInput.toLowerCase();
   
-  if (userInput === "") return; // Ignore empty input
-
-  appendMessage(userInput, "user-message");
-  document.getElementById("userInput").value = ""; // Clear input
-
-  setTimeout(() => {
-      const botResponse = getBotResponse(userInput);
-      appendMessage(botResponse, "bot-message");
-  }, 500); // Simulated delay for bot response
-}
-
-// Function to generate bot responses based on user input
-function getBotResponse(input) {
-  const responses = {
-      "hello": "Hi there! How can I help you?",
-      "hi": "Hello! What would you like to know?",
-      "how are you": "I'm just a bot, but thanks for asking!",
-      "help": "Sure, I'm here to assist you. Ask me anything!",
-  };
-
-  // Convert input to lowercase to make responses case-insensitive
-  const lowerInput = input.toLowerCase();
-
-  // Find a keyword-based response
-  for (const key in responses) {
-      if (lowerInput.includes(key)) {
-          return responses[key];
+  // Check for basic math operations
+  const mathRegex = /(\d+)\s*([\+\-\*\/])\s*(\d+)/;
+  const match = input.match(mathRegex);
+  if (match) {
+      const num1 = parseFloat(match[1]);
+      const operator = match[2];
+      const num2 = parseFloat(match[3]);
+      switch (operator) {
+          case "+":
+              return `The result is ${num1 + num2}.`;
+          case "-":
+              return `The result is ${num1 - num2}.`;
+          case "*":
+              return `The result is ${num1 * num2}.`;
+          case "/":
+              return num2 !== 0 ? `The result is ${num1 / num2}.` : "Division by zero is not allowed.";
       }
   }
 
-  return "Sorry, I didn't understand that. Could you try rephrasing?";
+  if (input.includes("recipe")) {
+    for (const entry of chatbotResponses) {
+        if (entry.keywords.includes("recipe") && entry.keywords.some(keyword => input.includes(keyword))) {
+            return entry.response;
+        }
+    }
+    return "I couldn't find a recipe for that dish. Can you try something else?";
+}
+
+  // Match keywords in JSON data
+  for (const entry of chatbotResponses) {
+      if (entry.keywords.some(keyword => input.includes(keyword))) {
+          return entry.response;
+      }
+  }
+
+  return "I don't know how to respond to that.";
+}
+
+
+// Function to append messages to the chat body
+function appendMessage(content, className) {
+    const chatBody = document.getElementById("chatBody");
+    const messageElement = document.createElement("div");
+    messageElement.className = className;
+    messageElement.textContent = content;
+    chatBody.appendChild(messageElement);
+    chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll to the latest message
+}
+
+// Function to handle user message and bot response
+function sendMessage() {
+    const userInput = document.getElementById("userInput").value.trim();
+
+    if (userInput === "") return;
+
+    appendMessage(userInput, "user-message");
+    document.getElementById("userInput").value = "";
+
+    const botResponse = getBotResponse(userInput);
+    appendMessage(botResponse, "bot-message");
 }
 
 // Allow Enter key to send the message
 document.getElementById("userInput").addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-      sendMessage();
-  }
+    if (event.key === "Enter") {
+        sendMessage();
+    }
 });
+
 // chatbot.js
 function toggleTheme() {
   const currentTheme = document.documentElement.getAttribute('data-theme');

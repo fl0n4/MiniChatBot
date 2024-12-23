@@ -1,0 +1,745 @@
+[
+    {
+        "keywords": ["hello", "hi", "hey"],
+        "response": "Hi there! How can I assist you today?"
+    },
+    {
+        "keywords": ["how are you", "how do you feel"],
+        "response": "I'm just a bot, but I'm doing great! How about you?"
+    },
+    {
+        "keywords": ["bye", "goodbye", "see you"],
+        "response": "Goodbye! Have a great day!"
+    },
+    {
+        "keywords": ["what is ai", "artificial intelligence"],
+        "response": "AI stands for Artificial Intelligence. It's all about machines mimicking human intelligence."
+    },
+    {
+        "keywords": ["help", "assist", "support"],
+        "response": "Sure! Let me know how I can assist you."
+    },
+    {
+        "keywords": ["joke", "funny", "laugh"],
+        "response": "Why don't skeletons fight each other? Because they don't have the guts!"
+    },
+    {
+        "keywords": ["love", "affection"],
+        "response": "Love is a wonderful feeling, isn't it?"
+    },
+    {
+        "keywords": ["weather", "temperature"],
+        "response": "I can't check the weather right now, but you can try a weather app!"
+    },
+    {
+        "keywords": ["thanks", "thank you", "appreciate"],
+        "response": "You're welcome! Let me know if there's anything else I can help with."
+    },
+    {
+        "keywords": ["what is your name", "who are you"],
+        "response": "I'm your friendly chatbot assistant!"
+    },
+    {
+        "keywords": ["who created you", "your creator"],
+        "response": "I was created by an awesome developer!"
+    },
+    {
+        "keywords": ["fact", "interesting", "trivia"],
+        "response": "Did you know? Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible!"
+    },
+    {
+        "keywords": ["capital of france", "paris"],
+        "response": "The capital of France is Paris."
+    },
+    {
+        "keywords": ["convert", "currency"],
+        "response": "Currency conversion depends on the current exchange rate. You might want to check online for the latest rate!"
+    },
+    {
+        "keywords": ["time", "what time"],
+        "response": "I can't tell the time, but your device should have the correct time displayed!"
+    },
+    {
+        "keywords": ["coffee", "make coffee"],
+        "response": "To make coffee, boil some water, add it to ground coffee, and let it brew for a few minutes. Then strain and enjoy!"
+    },
+    {
+        "keywords": ["2+2", "math"],
+        "response": "2+2 is 4. Easy math!"
+    },
+    {
+        "keywords": ["president of the united states", "us president"],
+        "response": "The current president of the United States is Joe Biden (as of 2024)."
+    },
+    {
+        "keywords": ["octopus", "interesting"],
+        "response": "Did you know? Octopuses have three hearts, and two of them stop beating when they swim!"
+    },
+    {
+        "keywords": ["learn coding", "programming", "code"],
+        "response": "Start by choosing a programming language, like Python or JavaScript. Then find tutorials online or enroll in a course. Practice is key!"
+    },
+    {
+        "keywords": ["gravity"],
+        "response": "Gravity is a force that attracts two bodies toward each other. On Earth, it gives weight to objects and pulls them toward the center of the planet."
+    },
+    {
+        "keywords": ["largest animal", "blue whale"],
+        "response": "The largest animal is the blue whale, which can grow up to 100 feet long and weigh over 200 tons!"
+    },
+    {
+        "keywords": ["sky blue", "why sky"],
+        "response": "The sky is blue because molecules in the air scatter blue light from the sun more than they scatter red light."
+    },
+    {
+        "keywords": ["reset password"],
+        "response": "To reset your password, go to the login page and look for the 'Forgot Password' link. Follow the instructions there."
+    },
+    {
+        "keywords": ["favorite color"],
+        "response": "I like all colors equally. They’re all part of the digital rainbow!"
+    },
+    {
+        "keywords": ["do you sleep"],
+        "response": "I don't need to sleep. I'm here for you 24/7!"
+    },
+    {
+        "keywords": ["meaning of life"],
+        "response": "The meaning of life is a deeply philosophical question, but many believe it’s to seek happiness, love, and purpose!"
+    },
+    {
+        "keywords": ["how to cook pasta"],
+        "response": "To cook pasta, boil water, add salt, and cook the pasta according to the package instructions. Don't forget to stir occasionally!"
+    },
+    {
+        "keywords": ["python", "language"],
+        "response": "Python is a versatile programming language used for web development, data analysis, AI, and more!"
+    },
+    {
+        "keywords": ["what's your purpose"],
+        "response": "My purpose is to assist and provide helpful responses to your queries."
+    },
+    {
+        "keywords": ["add", "addition", "sum"],
+        "response": "Sure! You can ask me something like 'add 2 and 3', and I'll calculate it for you."
+    },
+    {
+        "keywords": ["subtract", "minus", "difference"],
+        "response": "Ask me something like 'subtract 5 from 10', and I'll calculate it for you."
+    },
+    {
+        "keywords": ["multiply", "times", "product"],
+        "response": "I can help! For example, ask 'multiply 4 and 5', and I'll do the math."
+    },
+    {
+        "keywords": ["divide", "division", "quotient"],
+        "response": "I can divide numbers! Try something like 'divide 10 by 2'."
+    },
+    {
+        "keywords": ["what is", "calculate", "solve"],
+        "response": "Sure! You can ask me to calculate something like 'what is 2 + 2' or 'solve 7 * 8'."
+    }, 
+    {
+        "keywords": ["happy", "joy", "excited"],
+        "response": "I'm so glad to hear you're feeling happy! Happiness is contagious!"
+    },
+    {
+        "keywords": ["sad", "down", "unhappy"],
+        "response": "I'm sorry to hear you're feeling this way. Remember, it's okay to feel sad sometimes. If you need someone to talk to, I'm here."
+    },
+    {
+        "keywords": ["angry", "mad", "frustrated"],
+        "response": "I'm sorry you're feeling angry. Taking a deep breath can sometimes help. Let me know how I can assist."
+    },
+    {
+        "keywords": ["lonely", "alone", "isolated"],
+        "response": "I'm here for you. Even when you feel alone, know that you are valued and cared for."
+    },
+    {
+        "keywords": ["bored", "boring"],
+        "response": "Bored? How about I tell you a joke or share an interesting fact? Let me know!"
+    },
+    {
+        "keywords": ["excited", "thrilled", "energetic"],
+        "response": "That's fantastic! Your excitement is inspiring. What’s got you feeling this way?"
+    },
+    {
+        "keywords": ["confused", "lost", "unsure"],
+        "response": "It's okay to feel confused. Take a step back, and let's figure it out together. How can I help?"
+    },
+    {
+        "keywords": ["tired", "exhausted", "sleepy"],
+        "response": "Sounds like you need some rest. Remember to take breaks and recharge your energy."
+    },
+    {
+        "keywords": ["scared", "afraid", "fear"],
+        "response": "I'm here for you. Fear can be overwhelming, but you're stronger than you think."
+    },
+    {
+        "keywords": ["grateful", "thankful", "blessed"],
+        "response": "That's a wonderful feeling! Gratitude can make every day brighter. What are you grateful for?"
+    }, 
+    {
+        "keywords": ["recipe", "pasta"],
+        "response": "Here's a recipe for pasta:\n\n1. Boil water in a pot.\n2. Add salt to the boiling water.\n3. Add pasta and cook according to the package instructions.\n4. In a pan, heat olive oil and sauté garlic.\n5. Add tomato sauce and simmer.\n6. Mix the pasta with the sauce, garnish with basil, and serve!"
+    },
+    {
+        "keywords": ["recipe", "pizza"],
+        "response": "Here's a recipe for pizza:\n\n1. Preheat your oven to 475°F (245°C).\n2. Roll out the pizza dough on a floured surface.\n3. Spread tomato sauce over the dough.\n4. Sprinkle shredded mozzarella cheese.\n5. Add your favorite toppings (e.g., pepperoni, vegetables).\n6. Bake for 10-15 minutes until the crust is golden brown."
+    },
+    {
+        "keywords": ["recipe", "salad"],
+        "response": "Here's a recipe for salad:\n\n1. Chop fresh lettuce, tomatoes, cucumbers, and onions.\n2. Add olives and crumbled feta cheese.\n3. Drizzle with olive oil and lemon juice.\n4. Sprinkle with salt, pepper, and oregano. Toss and serve!"
+    },
+    {
+        "keywords": ["recipe", "cake"],
+        "response": "Here's a recipe for a simple cake:\n\n1. Preheat your oven to 350°F (175°C).\n2. In a bowl, mix 2 cups of flour, 1 cup of sugar, 1 tsp of baking powder, and a pinch of salt.\n3. Add 2 eggs, 1 cup of milk, and 1/2 cup of melted butter. Mix well.\n4. Pour into a greased baking pan and bake for 30-35 minutes.\n5. Let cool, then serve!"
+    }, 
+    {
+        "keywords": ["recipe", "burger"],
+        "response": "Here's a recipe for a classic burger:\n\n1. Form ground beef into patties, about 1/2 inch thick.\n2. Season both sides with salt and pepper.\n3. Cook the patties in a pan or on a grill over medium-high heat for 3-4 minutes per side.\n4. Toast burger buns on the grill or in a pan.\n5. Assemble with your favorite toppings: lettuce, tomato, cheese, onions, and condiments. Enjoy!"
+    },
+    {
+        "keywords": ["recipe", "omelette"],
+        "response": "Here's a recipe for a simple omelette:\n\n1. Crack 2-3 eggs into a bowl and whisk with salt and pepper.\n2. Heat butter or oil in a non-stick pan over medium heat.\n3. Pour the eggs into the pan and cook gently, lifting the edges as they set.\n4. Add your fillings (cheese, ham, vegetables) to one side of the omelette.\n5. Fold the omelette in half, cook for another minute, and serve!"
+    },
+    {
+        "keywords": ["recipe", "tacos"],
+        "response": "Here's a recipe for tacos:\n\n1. Cook ground beef or chicken with taco seasoning in a pan.\n2. Warm taco shells or tortillas in a skillet or microwave.\n3. Fill the shells with the meat and your favorite toppings: shredded lettuce, cheese, diced tomatoes, salsa, and sour cream.\n4. Serve and enjoy your delicious tacos!"
+    },
+    {
+        "keywords": ["recipe", "soup"],
+        "response": "Here's a recipe for vegetable soup:\n\n1. Heat oil in a large pot and sauté chopped onions, carrots, and celery.\n2. Add minced garlic and cook for another minute.\n3. Pour in vegetable broth and bring to a boil.\n4. Add diced potatoes, tomatoes, and your choice of vegetables (e.g., zucchini, green beans).\n5. Simmer until vegetables are tender, about 20-25 minutes. Season with salt and pepper, then serve!"
+    },
+    {
+        "keywords": ["recipe", "fried rice"],
+        "response": "Here's a recipe for fried rice:\n\n1. Heat oil in a pan or wok and scramble 2 eggs. Set aside.\n2. Add diced vegetables (carrots, peas, onions) and stir-fry until tender.\n3. Add cooked rice and mix well.\n4. Drizzle with soy sauce and toss to coat evenly.\n5. Stir in the scrambled eggs, cook for another minute, and serve!"
+    },
+    {
+        "keywords": ["recipe", "smoothie"],
+        "response": "Here's a recipe for a fruit smoothie:\n\n1. Add 1 cup of your favorite fruits (e.g., bananas, strawberries, blueberries) to a blender.\n2. Pour in 1/2 cup of yogurt and 1/2 cup of milk or juice.\n3. Add a handful of ice cubes if desired.\n4. Blend until smooth, pour into a glass, and enjoy your refreshing smoothie!"
+    },
+    {
+        "keywords": ["recipe", "lasagna"],
+        "response": "Here's a recipe for lasagna:\n\n1. Preheat your oven to 375°F (190°C).\n2. Cook lasagna noodles according to package instructions.\n3. Layer a baking dish with marinara sauce, noodles, ricotta cheese, ground meat, and shredded mozzarella cheese.\n4. Repeat layers and finish with a layer of cheese on top.\n5. Bake for 35-40 minutes until bubbly and golden brown. Let rest for 10 minutes before serving."
+    },
+    {
+        "keywords": ["recipe", "pancakes"],
+        "response": "Here's a recipe for fluffy pancakes:\n\n1. In a bowl, mix 1 cup of flour, 2 tbsp of sugar, 1 tsp of baking powder, and a pinch of salt.\n2. Add 1 cup of milk, 1 egg, and 2 tbsp of melted butter. Mix until smooth.\n3. Heat a non-stick skillet and pour 1/4 cup of batter for each pancake.\n4. Cook until bubbles form on the surface, then flip and cook the other side. Serve with syrup or fruit!"
+    },
+    {
+        "keywords": ["recipe", "brownies"],
+        "response": "Here's a recipe for brownies:\n\n1. Preheat your oven to 350°F (175°C).\n2. Melt 1/2 cup of butter and mix it with 1 cup of sugar.\n3. Add 2 eggs and 1 tsp of vanilla extract. Stir well.\n4. Mix in 1/3 cup of cocoa powder, 1/2 cup of flour, and a pinch of salt.\n5. Pour into a greased baking pan and bake for 20-25 minutes. Let cool, then cut into squares and enjoy!"
+    },
+    {
+        "keywords": ["recipe", "grilled cheese"],
+        "response": "Here's a recipe for a classic grilled cheese sandwich:\n\n1. Butter one side of two slices of bread.\n2. Place one slice (butter-side down) in a hot skillet and add slices of cheese.\n3. Top with the other slice of bread (butter-side up).\n4. Cook until the bottom is golden brown, then flip and cook the other side. Serve hot!"
+    },
+    {
+        "keywords": ["what is gravity", "gravity"],
+        "response": "Gravity is a force that attracts two bodies toward each other. On Earth, it keeps us grounded and makes objects fall."
+    },
+    {
+        "keywords": ["speed of light", "light speed"],
+        "response": "The speed of light in a vacuum is approximately 299,792 kilometers per second (186,282 miles per second)."
+    },
+    {
+        "keywords": ["what is photosynthesis", "photosynthesis"],
+        "response": "Photosynthesis is the process by which green plants use sunlight, water, and carbon dioxide to produce oxygen and glucose for energy."
+    },
+    {
+        "keywords": ["what is an atom", "atom"],
+        "response": "An atom is the basic unit of matter. It consists of a nucleus made of protons and neutrons, surrounded by electrons."
+    },
+    {
+        "keywords": ["what is dna", "dna"],
+        "response": "DNA, or deoxyribonucleic acid, is the molecule that carries genetic information in living organisms."
+    },
+    {
+        "keywords": ["why is the sky blue", "blue sky"],
+        "response": "The sky appears blue because molecules in the Earth's atmosphere scatter blue light from the Sun more than they scatter red light."
+    },
+    {
+        "keywords": ["what is a black hole", "black hole"],
+        "response": "A black hole is a region in space where gravity is so strong that nothing, not even light, can escape from it."
+    },
+    {
+        "keywords": ["what is evolution", "evolution"],
+        "response": "Evolution is the process by which different kinds of living organisms develop and diversify from earlier forms over generations."
+    },
+    {
+        "keywords": ["what is water made of", "water composition"],
+        "response": "Water is made of two hydrogen atoms bonded to one oxygen atom, giving it the chemical formula H2O."
+    },
+    {
+        "keywords": ["what is electricity", "electricity"],
+        "response": "Electricity is the flow of electric charge, typically carried by electrons moving through a conductor."
+    },
+    {
+        "keywords": ["what is the sun", "sun"],
+        "response": "The Sun is a star at the center of our solar system. It's a massive ball of hot gases, mostly hydrogen and helium, undergoing nuclear fusion."
+    },
+    {
+        "keywords": ["what are planets", "planets"],
+        "response": "Planets are large celestial bodies that orbit a star. In our solar system, we have eight planets, including Earth."
+    },
+    {
+        "keywords": ["what is the moon", "moon"],
+        "response": "The Moon is Earth's natural satellite. It reflects sunlight and affects tides on Earth due to its gravitational pull."
+    },
+    {
+        "keywords": ["what is energy", "energy"],
+        "response": "Energy is the ability to do work. It exists in various forms, including kinetic, potential, thermal, and chemical energy."
+    },
+    {
+        "keywords": ["what is matter", "matter"],
+        "response": "Matter is anything that has mass and takes up space. It is made up of atoms and can exist in different states such as solid, liquid, and gas."
+    },
+    {
+        "keywords": ["what is the periodic table", "periodic table"],
+        "response": "The periodic table is a chart that organizes all known chemical elements by their atomic number, electron configuration, and recurring properties."
+    },
+    {
+        "keywords": ["what is friction", "friction"],
+        "response": "Friction is a force that opposes the motion of objects in contact. It can generate heat and is useful for many everyday activities, like walking."
+    },
+    {
+        "keywords": ["what is a cell", "cell"],
+        "response": "A cell is the basic structural and functional unit of life. All living organisms are made up of cells, which can be prokaryotic or eukaryotic."
+    },
+    {
+        "keywords": ["what is temperature", "temperature"],
+        "response": "Temperature is a measure of how hot or cold something is. It reflects the average kinetic energy of the particles in a substance."
+    },
+    {
+        "keywords": ["what causes rain", "rain"],
+        "response": "Rain occurs when water vapor in the atmosphere condenses into droplets that grow too heavy to stay suspended and fall to the ground."
+    }, 
+    {
+        "keywords": ["what is sound", "sound"],
+        "response": "Sound is a vibration that travels through a medium like air, water, or solids. It is detected by our ears as pressure waves."
+    },
+    {
+        "keywords": ["what is light", "light"],
+        "response": "Light is electromagnetic radiation that is visible to the human eye. It travels in waves and can also behave as particles called photons."
+    },
+    {
+        "keywords": ["what is heat", "heat"],
+        "response": "Heat is a form of energy transfer between objects of different temperatures. It flows from the hotter object to the cooler one."
+    },
+    {
+        "keywords": ["what is inertia", "inertia"],
+        "response": "Inertia is the property of an object to resist changes in its state of motion. It's why objects stay at rest or keep moving unless acted on by a force."
+    },
+    {
+        "keywords": ["what is a galaxy", "galaxy"],
+        "response": "A galaxy is a massive system of stars, planets, gas, dust, and dark matter bound together by gravity. Our galaxy is the Milky Way."
+    },
+    {
+        "keywords": ["what is an ecosystem", "ecosystem"],
+        "response": "An ecosystem is a community of living organisms interacting with each other and their non-living environment, like air, water, and soil."
+    },
+    {
+        "keywords": ["what is the ozone layer", "ozone layer"],
+        "response": "The ozone layer is a part of Earth's atmosphere that absorbs most of the Sun's harmful ultraviolet radiation, protecting life on Earth."
+    },
+    {
+        "keywords": ["what is a neutron", "neutron"],
+        "response": "A neutron is a subatomic particle found in the nucleus of an atom. It has no electric charge and a mass slightly greater than that of a proton."
+    },
+    {
+        "keywords": ["what is a proton", "proton"],
+        "response": "A proton is a positively charged subatomic particle found in the nucleus of an atom. It determines the atomic number of an element."
+    },
+    {
+        "keywords": ["what is kinetic energy", "kinetic energy"],
+        "response": "Kinetic energy is the energy of motion. Any object that moves has kinetic energy, calculated as 1/2 × mass × velocity²."
+    },
+    {
+        "keywords": ["what is potential energy", "potential energy"],
+        "response": "Potential energy is stored energy an object has because of its position or configuration. For example, a rock at the top of a hill has gravitational potential energy."
+    },
+    {
+        "keywords": ["what is a chemical reaction", "chemical reaction"],
+        "response": "A chemical reaction is a process where substances (reactants) change into new substances (products) with different properties."
+    },
+    {
+        "keywords": ["what is an element", "element"],
+        "response": "An element is a pure substance made of only one type of atom. Examples include hydrogen, oxygen, and gold."
+    },
+    {
+        "keywords": ["what is a molecule", "molecule"],
+        "response": "A molecule is a group of two or more atoms bonded together. For example, water (H2O) is a molecule made of two hydrogen atoms and one oxygen atom."
+    },
+    {
+        "keywords": ["what is the big bang", "big bang"],
+        "response": "The Big Bang is the leading theory explaining the origin of the universe. It suggests the universe began as a singularity about 13.8 billion years ago and has been expanding ever since."
+    },
+    {
+        "keywords": ["what is a comet", "comet"],
+        "response": "A comet is a celestial object made of ice, dust, and rocky material. It develops a glowing tail when it gets close to the Sun."
+    },
+    {
+        "keywords": ["what is a star", "star"],
+        "response": "A star is a massive ball of hot gas, primarily hydrogen and helium, that produces light and heat through nuclear fusion at its core."
+    },
+    {
+        "keywords": ["what is the periodic table", "periodic table"],
+        "response": "The periodic table is a chart that organizes all known chemical elements by their atomic number, electron configuration, and recurring chemical properties."
+    },
+    {
+        "keywords": ["what is velocity", "velocity"],
+        "response": "Velocity is the speed of an object in a specific direction. For example, 60 km/h north is a velocity."
+    },
+    {
+        "keywords": ["what is acceleration", "acceleration"],
+        "response": "Acceleration is the rate at which an object's velocity changes over time. It's caused by forces acting on the object."
+    },
+    {
+        "keywords": ["what is a wave", "wave"],
+        "response": "A wave is a disturbance that transfers energy through a medium or space. Examples include sound waves, light waves, and ocean waves."
+    },
+    {
+        "keywords": ["what causes seasons", "seasons"],
+        "response": "Seasons are caused by Earth's tilt on its axis and its orbit around the Sun, which changes the intensity and duration of sunlight in different areas."
+    },
+    {
+        "keywords": ["what is carbon dioxide", "carbon dioxide"],
+        "response": "Carbon dioxide (CO2) is a colorless gas made of one carbon atom and two oxygen atoms. It's a byproduct of respiration and combustion and is important for photosynthesis in plants."
+    },
+    {
+        "keywords": ["what is nuclear fusion", "nuclear fusion"],
+        "response": "Nuclear fusion is the process where two atomic nuclei combine to form a heavier nucleus, releasing energy. It's how stars, like the Sun, produce energy."
+    },
+    {
+        "keywords": ["what is a volcano", "volcano"],
+        "response": "A volcano is an opening in Earth's surface where molten rock, ash, and gases escape during an eruption. Volcanoes form at tectonic plate boundaries or hot spots."
+    },
+    {
+        "keywords": ["what is chlorophyll", "chlorophyll"],
+        "response": "Chlorophyll is a green pigment in plants that absorbs light energy for photosynthesis, helping them convert sunlight into food."
+    }, 
+    {
+        "keywords": ["who was napoleon", "napoleon"],
+        "response": "Napoleon Bonaparte was a French military leader and emperor who rose to prominence during the French Revolution. He ruled France from 1804 to 1814 and is known for his military conquests and reforms."
+    },
+    {
+        "keywords": ["what was world war 1", "ww1"],
+        "response": "World War I, also known as the Great War, was a global conflict that lasted from 1914 to 1918. It involved major powers like the Allied Powers (France, Britain, Russia) and the Central Powers (Germany, Austria-Hungary)."
+    },
+    {
+        "keywords": ["what was world war 2", "ww2"],
+        "response": "World War II was a global conflict that lasted from 1939 to 1945. It was fought between the Allies (including the US, UK, and USSR) and the Axis Powers (Germany, Italy, and Japan). It is known for significant events like the Holocaust and the use of atomic bombs."
+    },
+    {
+        "keywords": ["who was martin luther king jr", "martin luther king"],
+        "response": "Martin Luther King Jr. was an American civil rights leader who advocated for racial equality and nonviolent resistance. He is best known for his 'I Have a Dream' speech and his role in the American Civil Rights Movement."
+    },
+    {
+        "keywords": ["what was the cold war", "cold war"],
+        "response": "The Cold War was a period of geopolitical tension between the United States and the Soviet Union from 1947 to 1991. It involved ideological conflicts, nuclear arms races, and proxy wars but never escalated into direct military conflict between the two superpowers."
+    },
+    {
+        "keywords": ["what is the renaissance", "renaissance"],
+        "response": "The Renaissance was a cultural, artistic, and intellectual revival that began in Europe in the 14th century and lasted until the 17th century. It marked the transition from the Middle Ages to modernity and produced great artists like Leonardo da Vinci and Michelangelo."
+    },
+    {
+        "keywords": ["who was abraham lincoln", "abraham lincoln"],
+        "response": "Abraham Lincoln was the 16th president of the United States, serving during the American Civil War. He is best known for abolishing slavery through the Emancipation Proclamation and delivering the Gettysburg Address."
+    },
+    {
+        "keywords": ["what was the industrial revolution", "industrial revolution"],
+        "response": "The Industrial Revolution was a period of major technological, economic, and social change during the late 18th and 19th centuries. It began in Britain and spread globally, revolutionizing industries like manufacturing, transportation, and agriculture."
+    },
+    {
+        "keywords": ["who was julius caesar", "julius caesar"],
+        "response": "Julius Caesar was a Roman general, statesman, and dictator who played a critical role in the events that led to the rise of the Roman Empire. He was assassinated in 44 BCE by political rivals."
+    },
+    {
+        "keywords": ["who was cleopatra", "cleopatra"],
+        "response": "Cleopatra was the last active ruler of the Ptolemaic Kingdom of Egypt. She is known for her intelligence, political acumen, and relationships with Roman leaders Julius Caesar and Mark Antony."
+    },
+    {
+        "keywords": ["what was the american revolution", "american revolution"],
+        "response": "The American Revolution was a colonial revolt that took place between 1765 and 1783. The American colonies fought against British rule, ultimately gaining independence and forming the United States."
+    },
+    {
+        "keywords": ["what was the great depression", "great depression"],
+        "response": "The Great Depression was a severe global economic downturn that began in 1929 and lasted until the late 1930s. It was triggered by the stock market crash of 1929 and led to widespread unemployment and poverty."
+    },
+    {
+        "keywords": ["what was the civil rights movement", "civil rights movement"],
+        "response": "The Civil Rights Movement was a struggle for racial equality in the United States during the 1950s and 1960s. It aimed to end segregation and discrimination against African Americans and secure their legal rights."
+    },
+    {
+        "keywords": ["who was albert einstein", "einstein"],
+        "response": "Albert Einstein was a theoretical physicist best known for developing the theory of relativity. He is considered one of the most influential scientists in history and received the Nobel Prize in Physics in 1921."
+    },
+    {
+        "keywords": ["what was the space race", "space race"],
+        "response": "The Space Race was a competition between the United States and the Soviet Union during the Cold War to achieve significant milestones in space exploration, including the first satellite (Sputnik) and the first human on the Moon (Apollo 11)."
+    },
+    {
+        "keywords": ["who was gandhi", "mahatma gandhi"],
+        "response": "Mahatma Gandhi was an Indian leader who used nonviolent resistance to lead India to independence from British rule. He is celebrated as the Father of the Nation in India."
+    },
+    {
+        "keywords": ["what was the berlin wall", "berlin wall"],
+        "response": "The Berlin Wall was a concrete barrier that divided East and West Berlin from 1961 to 1989. It symbolized the ideological divide between communism and capitalism during the Cold War."
+    },
+    {
+        "keywords": ["what is the united nations", "united nations"],
+        "response": "The United Nations (UN) is an international organization founded in 1945 to promote peace, security, and cooperation among nations."
+    },
+    {
+        "keywords": ["who was marie curie", "marie curie"],
+        "response": "Marie Curie was a physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize and remains the only person to win in two different scientific fields (Physics and Chemistry)."
+    }, 
+    {
+        "keywords": ["what is the largest ocean", "largest ocean"],
+        "response": "The largest ocean in the world is the Pacific Ocean, covering more than 63 million square miles."
+    },
+    {
+        "keywords": ["what is the tallest mountain", "tallest mountain"],
+        "response": "The tallest mountain in the world is Mount Everest, which stands at 8,848.86 meters (29,031.7 feet) above sea level."
+    },
+    {
+        "keywords": ["what is the smallest country", "smallest country"],
+        "response": "The smallest country in the world is Vatican City, which is only about 44 hectares (110 acres) in size."
+    },
+    {
+        "keywords": ["what is the largest desert", "largest desert"],
+        "response": "The largest desert in the world is the Antarctic Desert, which is a cold desert covering about 14 million square kilometers."
+    },
+    {
+        "keywords": ["who invented the telephone", "telephone inventor"],
+        "response": "The telephone was invented by Alexander Graham Bell in 1876."
+    },
+    {
+        "keywords": ["what is the speed of sound", "speed of sound"],
+        "response": "The speed of sound in air at sea level is approximately 343 meters per second (1,235 kilometers per hour or 767 miles per hour)."
+    },
+    {
+        "keywords": ["what is the longest river", "longest river"],
+        "response": "The longest river in the world is the Nile River, which is about 6,650 kilometers (4,132 miles) long."
+    },
+    {
+        "keywords": ["what is the largest country", "largest country"],
+        "response": "The largest country in the world by land area is Russia, spanning 17.1 million square kilometers (6.6 million square miles)."
+    },
+    {
+        "keywords": ["what is the capital of japan", "capital of japan"],
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "keywords": ["who invented the internet", "internet inventor"],
+        "response": "The development of the internet was a collaborative effort, but Vint Cerf and Bob Kahn are credited with creating the TCP/IP protocols that form its foundation."
+    },
+    {
+        "keywords": ["what is the hottest planet", "hottest planet"],
+        "response": "The hottest planet in our solar system is Venus, with surface temperatures reaching up to 475°C (900°F)."
+    },
+    {
+        "keywords": ["what is the coldest planet", "coldest planet"],
+        "response": "The coldest planet in our solar system is Uranus, with temperatures dropping as low as -224°C (-371°F)."
+    },
+    {
+        "keywords": ["what is the fastest animal", "fastest animal"],
+        "response": "The fastest land animal is the cheetah, which can reach speeds of up to 75 miles per hour (120 km/h)."
+    },
+    {
+        "keywords": ["what is the largest animal", "largest animal"],
+        "response": "The largest animal in the world is the blue whale, which can grow up to 100 feet (30 meters) long and weigh over 200 tons."
+    },
+    {
+        "keywords": ["what is the capital of france", "capital of france"],
+        "response": "The capital of France is Paris."
+    },
+    {
+        "keywords": ["who was the first man on the moon", "first man on the moon"],
+        "response": "The first man on the moon was Neil Armstrong, who landed as part of NASA's Apollo 11 mission in 1969."
+    },
+    {
+        "keywords": ["what is the deepest ocean", "deepest ocean"],
+        "response": "The deepest ocean in the world is the Pacific Ocean, with the Mariana Trench reaching a depth of about 10,994 meters (36,070 feet)."
+    },
+    {
+        "keywords": ["what is the largest rainforest", "largest rainforest"],
+        "response": "The largest rainforest in the world is the Amazon Rainforest, which spans over 5.5 million square kilometers across South America."
+    },
+    {
+        "keywords": ["who invented electricity", "electricity inventor"],
+        "response": "Electricity wasn't invented but discovered and studied. Benjamin Franklin is famous for his experiments, and Michael Faraday's work laid the foundation for electric technology."
+    },
+    {
+        "keywords": ["what is the most spoken language", "most spoken language"],
+        "response": "The most spoken language in the world by total speakers is English. However, Mandarin Chinese has the highest number of native speakers."
+    },
+    {
+        "keywords": ["what is the longest wall", "longest wall"],
+        "response": "The longest wall in the world is the Great Wall of China, stretching over 13,000 miles (21,196 kilometers)."
+    },
+    {
+        "keywords": ["what is the biggest island", "biggest island"],
+        "response": "The largest island in the world is Greenland, which has an area of about 2.17 million square kilometers."
+    },
+    {
+        "keywords": ["what is the tallest tree", "tallest tree"],
+        "response": "The tallest tree in the world is a coast redwood named Hyperion, which is about 379 feet (115.5 meters) tall."
+    },
+    {
+        "keywords": ["what is the most popular sport", "most popular sport"],
+        "response": "The most popular sport in the world is football (soccer), enjoyed by billions of fans globally."
+    },
+    {
+        "keywords": ["what is the largest bird", "largest bird"],
+        "response": "The largest bird in the world is the ostrich, which can grow up to 9 feet tall and weigh over 150 kilograms (330 pounds)."
+    },
+    {
+        "keywords": ["what is the smallest bird", "smallest bird"],
+        "response": "The smallest bird in the world is the bee hummingbird, which is about 2 inches (5 centimeters) long and weighs less than 2 grams."
+    }, 
+    {
+        "keywords": ["what is artificial intelligence", "artificial intelligence"],
+        "response": "Artificial Intelligence (AI) is the simulation of human intelligence in machines programmed to think, learn, and perform tasks like humans."
+    },
+    {
+        "keywords": ["what is machine learning", "machine learning"],
+        "response": "Machine Learning is a subset of AI that enables systems to learn from data and improve their performance without being explicitly programmed."
+    },
+    {
+        "keywords": ["what is a computer", "computer"],
+        "response": "A computer is an electronic device that processes data and performs tasks according to instructions provided by software."
+    },
+    {
+        "keywords": ["who invented the computer", "computer inventor"],
+        "response": "The modern computer is attributed to Alan Turing, but Charles Babbage designed the first mechanical computer in the 19th century."
+    },
+    {
+        "keywords": ["what is the internet", "internet"],
+        "response": "The Internet is a global network of interconnected computers that communicate using standardized protocols."
+    },     {
+        "keywords": ["what is the largest continent", "largest continent"],
+        "response": "The largest continent in the world is Asia, covering about 44.58 million square kilometers."
+    },
+    {
+        "keywords": ["what is the smallest continent", "smallest continent"],
+        "response": "The smallest continent in the world is Australia, with an area of about 7.692 million square kilometers."
+    },
+    {
+        "keywords": ["what is the equator", "equator"],
+        "response": "The Equator is an imaginary line around the middle of the Earth that divides it into the Northern and Southern Hemispheres."
+    },
+    {
+        "keywords": ["what is the tallest waterfall", "tallest waterfall"],
+        "response": "The tallest waterfall in the world is Angel Falls in Venezuela, with a height of 979 meters (3,212 feet)."
+    },
+    {
+        "keywords": ["what is the deepest lake", "deepest lake"],
+        "response": "The deepest lake in the world is Lake Baikal in Russia, with a depth of 1,642 meters (5,387 feet)."
+    },
+    {
+        "keywords": ["who is the fastest runner", "fastest runner"],
+        "response": "The fastest runner in the world is Usain Bolt, who holds the record for the 100 meters at 9.58 seconds."
+    },
+    {
+        "keywords": ["what is the oldest sport", "oldest sport"],
+        "response": "Wrestling is considered one of the oldest sports in the world, dating back to ancient times."
+    },
+    {
+        "keywords": ["who won the first world cup", "first world cup winner"],
+        "response": "The first FIFA World Cup was won by Uruguay in 1930."
+    },
+    {
+        "keywords": ["what is the most expensive sport", "expensive sport"],
+        "response": "Formula 1 racing is considered one of the most expensive sports due to its high costs for cars, teams, and events."
+    },
+    {
+        "keywords": ["what is the olympics", "olympics"],
+        "response": "The Olympics are a global sporting event held every four years, featuring athletes from around the world competing in various sports."
+    },
+    {
+        "keywords": ["what is space", "space"],
+        "response": "Space is the vast, seemingly infinite expanse that exists beyond Earth's atmosphere, containing stars, planets, galaxies, and more."
+    },
+    {
+        "keywords": ["what is a galaxy", "galaxy"],
+        "response": "A galaxy is a massive system of stars, gas, dust, and dark matter bound together by gravity. Our galaxy is the Milky Way."
+    },
+    {
+        "keywords": ["what is the big bang", "big bang"],
+        "response": "The Big Bang is the leading theory for the origin of the universe. It describes the universe expanding from a very high-density and high-temperature state about 13.8 billion years ago."
+    },
+    {
+        "keywords": ["what is a supernova", "supernova"],
+        "response": "A supernova is a powerful explosion that occurs when a massive star exhausts its nuclear fuel and collapses under its own gravity."
+    },
+    {
+        "keywords": ["what is a wormhole", "wormhole"],
+        "response": "A wormhole is a theoretical passage through space-time that could create shortcuts for long journeys across the universe."
+    },
+    {
+        "keywords": ["what is art", "art"],
+        "response": "Art is a diverse range of human activities involving the creation of visual, auditory, or performance works that express imagination, skill, and emotion."
+    },
+    {
+        "keywords": ["who was leonardo da vinci", "leonardo da vinci"],
+        "response": "Leonardo da Vinci was a Renaissance artist, scientist, and inventor. He is famous for works like the Mona Lisa and The Last Supper."
+    },
+    {
+        "keywords": ["what is the most famous painting", "famous painting"],
+        "response": "One of the most famous paintings in the world is the Mona Lisa by Leonardo da Vinci."
+    },
+    {
+        "keywords": ["what is literature", "literature"],
+        "response": "Literature refers to written works of art, such as novels, poetry, and plays, that explore ideas, emotions, and stories."
+    },
+    {
+        "keywords": ["who wrote hamlet", "hamlet"],
+        "response": "Hamlet was written by William Shakespeare, one of the greatest playwrights and poets in history."
+    },
+    {
+        "keywords": ["what is a vaccine", "vaccine"],
+        "response": "A vaccine is a biological preparation that provides immunity to a specific infectious disease by stimulating the immune system."
+    },
+    {
+        "keywords": ["what is the heart", "heart"],
+        "response": "The heart is a muscular organ that pumps blood throughout the body, delivering oxygen and nutrients to tissues."
+    },
+    {
+        "keywords": ["what is the brain", "brain"],
+        "response": "The brain is the central organ of the nervous system, responsible for controlling body functions, thoughts, emotions, and memory."
+    },
+    {
+        "keywords": ["what is cancer", "cancer"],
+        "response": "Cancer is a disease caused by the uncontrolled growth of abnormal cells in the body, which can invade and damage tissues."
+    },
+    {
+        "keywords": ["what is diabetes", "diabetes"],
+        "response": "Diabetes is a chronic health condition where the body has difficulty regulating blood sugar levels due to insufficient insulin or insulin resistance."
+    },
+    {
+        "keywords": ["who is zeus", "zeus"],
+        "response": "Zeus is the king of the gods in Greek mythology. He rules the sky and wields thunderbolts as his weapon."
+    },
+    {
+        "keywords": ["who is thor", "thor"],
+        "response": "Thor is a Norse god associated with thunder, lightning, and storms. He wields the hammer Mjölnir."
+    },
+    {
+        "keywords": ["what is mythology", "mythology"],
+        "response": "Mythology is a collection of stories and legends that explain the beliefs, traditions, and origins of a culture."
+    },
+    {
+        "keywords": ["who is hercules", "hercules"],
+        "response": "Hercules is a hero in Greek mythology known for his incredible strength and for completing the Twelve Labors."
+    },
+    {
+        "keywords": ["what is valhalla", "valhalla"],
+        "response": "Valhalla is a majestic hall in Norse mythology where warriors who died in battle are taken by the Valkyries to live with Odin."
+    }
+
+
+
+
+]
