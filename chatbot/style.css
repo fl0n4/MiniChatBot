@@ -1,25 +1,24 @@
-/* Base styles using CSS variables */
 :root {
-  --background: #1F1F2E; /* Dark background */
-  --foreground: #F3F3F3; /* Light text for contrast */
-  --secondary-background: #2A2A3C; /* Slightly lighter dark for containers */
-  --button-background: linear-gradient(135deg, #6A8DFF, #4568E8); /* Vibrant blue gradient for buttons */
-  --button-hover: linear-gradient(135deg, #345DFF, #2A47E8); /* Slightly darker hover */
-  --message-bot: linear-gradient(135deg, #3E4E79, #6A8DFF); /* Softer blue for bot messages */
-  --message-user: linear-gradient(135deg, #E573FF, #B39DDB); /* Pinkish-purplish for user messages */
-  --input-border: #6A8DFF; /* Matches bot message for cohesion */
-  --qx-length: 400px; /* Define fixed or max width for bot messages */
+  --background: #1F1F2E;
+  --foreground: #F3F3F3; 
+  --secondary-background: #2A2A3C; 
+  --button-background: linear-gradient(135deg, #6A8DFF, #4568E8); 
+  --button-hover: linear-gradient(135deg, #345DFF, #2A47E8); 
+  --message-bot: linear-gradient(135deg, #3E4E79, #6A8DFF); 
+  --message-user: linear-gradient(135deg, #E573FF, #B39DDB); 
+  --input-border: #6A8DFF; 
+  --qx-length: 400px; 
 }
 
 [data-theme="light"] {
-  --background: #FDFDFE; /* Light theme background */
-  --foreground: #1F1F2E; /* Dark text for contrast */
-  --secondary-background: #FFFFFF; /* Clean white for containers */
-  --button-background: linear-gradient(135deg, #8DC6FF, #A7D8FF); /* Soft blue for light theme */
-  --button-hover: linear-gradient(135deg, #74BFFF, #98D4FF); /* Slightly darker hover */
-  --message-bot: linear-gradient(135deg, #CCE8FF, #A7D8FF); /* Soft pastel blue for bot messages */
-  --message-user: linear-gradient(135deg, #FFB3FF, #D6A4FF); /* Light pinkish-purple for user */
-  --input-border: #8DC6FF; /* Matches light theme colors */
+  --background: #FDFDFE; 
+  --foreground: #1F1F2E; 
+  --secondary-background: #FFFFFF;
+  --button-background: linear-gradient(135deg, #8DC6FF, #A7D8FF); 
+  --button-hover: linear-gradient(135deg, #74BFFF, #98D4FF);
+  --message-bot: linear-gradient(135deg, #CCE8FF, #A7D8FF); 
+  --message-user: linear-gradient(135deg, #FFB3FF, #D6A4FF);
+  --input-border: #8DC6FF;
 }
 
 body {
@@ -78,13 +77,13 @@ body {
   padding: 12px 18px;
   border-radius: 12px;
   margin-bottom: 15px;
-  max-width: var(--qx-length); /* Limit bot message width */
-  word-wrap: break-word; /* Break long words to fit within the container */
-  white-space: pre-wrap; /* Wrap text properly and respect line breaks */
+  max-width: var(--qx-length);
+  word-wrap: break-word; 
+  white-space: pre-wrap; 
   font-size: 14px;
   background: var(--message-bot);
   color: var(--foreground);
-  text-align: left; /* Align bot messages to the left */
+  text-align: left; 
   box-shadow: 0 2px 8px rgba(106, 141, 255, 0.3);
 }
 
@@ -92,14 +91,14 @@ body {
   padding: 12px 18px;
   border-radius: 12px;
   margin-bottom: 15px;
-  max-width: 400px; /* Dynamically adjust user message width */
+  max-width: 400px; 
   word-wrap: break-word;
   white-space: pre-wrap;
   font-size: 14px;
   background: var(--message-user);
   color: var(--foreground);
-  text-align: left; /* Align text inside the message bubble */
-  margin-left: auto; /* Align the message bubble to the right */
+  text-align: left;
+  margin-left: auto; 
   box-shadow: 0 2px 8px rgba(229, 115, 255, 0.3);
 }
 
