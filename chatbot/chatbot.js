@@ -1,6 +1,5 @@
 let chatbotResponses = [];
 
-// Fetch the JSON data
 fetch("responses.json")
     .then(response => {
         if (!response.ok) {
@@ -15,15 +14,13 @@ fetch("responses.json")
         console.error("Error loading responses:", error);
     });
 
-// Function to find a bot response
-// Store user-specific context
+
 let userContext = {};
 
-// Function to find a bot response
 function getBotResponse(userInput) {
     const input = userInput.toLowerCase();
 
-    // Check for "my name is" logic
+    
     if (input.includes("my name is")) {
         const namePart = input.split("my name is")[1]?.trim(); // Extract the part after "my name is"
         if (namePart && namePart.length > 0) {
@@ -35,14 +32,14 @@ function getBotResponse(userInput) {
         }
     }
 
-    // Check for "what's my name" logic
+    
     if (input.includes("what's my name")) {
         return userContext.name
             ? `Your name is ${userContext.name}!`
             : "I don't know your name yet. Can you tell me?";
     }
 
-    // Check for basic math operations
+    
     const mathRegex = /(\d+)\s*([\+\-\*\/])\s*(\d+)/;
     const match = input.match(mathRegex);
     if (match) {
@@ -78,7 +75,7 @@ function getBotResponse(userInput) {
         return "I couldn't find a recipe for that dish. Can you try something else?";
     }
 
-    // Match general keywords from JSON data
+    
     for (const entry of chatbotResponses) {
         if (entry.keywords.some(keyword => input.includes(keyword))) {
             return entry.response;
@@ -90,7 +87,6 @@ function getBotResponse(userInput) {
 }
 
 
-// Function to append messages to the chat body
 function appendMessage(content, className) {
     const chatBody = document.getElementById("chatBody");
     const messageElement = document.createElement("div");
@@ -100,7 +96,6 @@ function appendMessage(content, className) {
     chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll to the latest message
 }
 
-// Function to handle user message and bot response
 function sendMessage() {
     const userInput = document.getElementById("userInput").value.trim();
 
@@ -113,14 +108,12 @@ function sendMessage() {
     appendMessage(botResponse, "bot-message");
 }
 
-// Allow Enter key to send the message
 document.getElementById("userInput").addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         sendMessage();
     }
 });
 
-// chatbot.js
 function toggleTheme() {
   const currentTheme = document.documentElement.getAttribute('data-theme');
   const newTheme = currentTheme === 'light' ? 'dark' : 'light';
@@ -131,5 +124,4 @@ function toggleTheme() {
   toggleButton.textContent = newTheme === 'light' ? '🌞' : '🌙';
 }
 
-// Set initial theme
 document.documentElement.setAttribute('data-theme', 'dark');
